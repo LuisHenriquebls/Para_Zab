@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+.container{
+    margin: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#coracao{
+    width: 50px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background-color: #c80f0f;
+    transform: rotate(45deg);
+    animation: heart .6s infinite alternate;
+}
+#coracao::before{
+    content: "";
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 80px;
+    border-radius: 50px 50px 0 0 ;
+    background-color: #c80f0f;
+    transform: rotate(-90deg);
+
+}
+
+@keyframes heart{
+    from {
+        scale: 1;
+
+    }
+    to{
+        scale: 1.3; 
+    }  
+}
